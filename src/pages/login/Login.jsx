@@ -6,7 +6,7 @@ import axios from "axios";
 //Context
 import { UserContext } from "../../context/context";
 // Login Url
-const LOGIN_URL = "/login";
+const LOGIN_URL = "/api/login";
 
 const Login = () => {
   //Navigate

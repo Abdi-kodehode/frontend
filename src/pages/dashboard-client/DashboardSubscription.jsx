@@ -14,7 +14,7 @@ const DashboardAbonament = () => {
   useEffect(() => {
     const getSubscriptions = async () => {
       const { data } = await axios.get(
-        "/subscriptions"
+        "/api/subscriptions"
       );
       console.log("subs => ", data);
       setSubscriptions(data.data);
@@ -25,7 +25,7 @@ const DashboardAbonament = () => {
 
   const manageSubscriptions = async () => {
     const { data } = await axios.get(
-      "/customer-portal"
+      "/api/customer-portal"
     );
     window.open(data);
   };

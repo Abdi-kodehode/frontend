@@ -33,14 +33,14 @@ const SubscriptionPlan = () => {
         state.user &&
         state.user.subscriptions &&
         state.user.subscriptions.resumes_at &&
-        navigate("/account");
+        navigate("/api/account");
     };
 
     state && state.user && isPaused();
   }, [state && state.user]);
 
   const fetchPrices = async () => {
-    const { data } = await axios.get("/prices");
+    const { data } = await axios.get("/api/prices");
     setPrices(data);
   };
 
@@ -53,14 +53,14 @@ const SubscriptionPlan = () => {
     // console.log("plan clicked", price.id);
     if (state && state.token) {
       const { data } = await axios.post(
-        "/create-subscription",
+        "/api/create-subscription",
         {
           priceId: price.id,
         }
       );
       window.open(data);
     } else {
-      navigate("/login");
+      navigate("/api/login");
     }
   };
 

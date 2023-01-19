@@ -24,7 +24,7 @@ const navigate = useNavigate()
         // update user in context
         setState(auth);
         setTimeout(() => {
-          navigate("/dashboard");
+          navigate("/api/dashboard");
         }, 1000);
       }
     };

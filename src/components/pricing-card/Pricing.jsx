@@ -12,13 +12,13 @@ const PricingPlan = () => {
   }, []);
 
   const fetchPrices = async () => {
-    const { data: response } = await axios.get("http://localhost:5000/prices");
+    const { data: response } = await axios.get("/api/prices");
 
     setPrices(response.data);
   };
   const createSession = async (priceId) => {
     const { data: response } = await axios.post(
-      "http://localhost:5000/session",
+      "/api/session",
       {
         priceId,
       }
