@@ -14,7 +14,7 @@ const USERNAME_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 const PASSWORD_REGEX =
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 const EMAIL_REGEX = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
-const REGISTER_URL = "http://localhost:8000/api/register";
+const REGISTER_URL = "https://pwo-mern-api.onrender.com/api/register";
 
 const SignUp = () => {
   //Navigate

@@ -40,7 +40,7 @@ const SubscriptionPlan = () => {
   }, [state && state.user]);
 
   const fetchPrices = async () => {
-    const { data } = await axios.get("http://localhost:8000/api/prices");
+    const { data } = await axios.get("https://pwo-mern-api.onrender.com/api/prices");
     setPrices(data);
   };
 
@@ -53,7 +53,7 @@ const SubscriptionPlan = () => {
     // console.log("plan clicked", price.id);
     if (state && state.token) {
       const { data } = await axios.post(
-        "http://localhost:8000/api/create-subscription",
+        "https://pwo-mern-api.onrender.com/api/create-subscription",
         {
           priceId: price.id,
         }

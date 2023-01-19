@@ -6,7 +6,7 @@ import axios from "axios";
 //Context
 import { UserContext } from "../../context/context";
 // Login Url
-const LOGIN_URL = "http://localhost:8000/api/login";
+const LOGIN_URL = "https://pwo-mern-api.onrender.com/api/login";
 
 const Login = () => {
   //Navigate
