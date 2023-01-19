@@ -4,7 +4,7 @@ import axios from "axios";
 
 import { UserContext } from "../../context/context";
 
-const Subscription_URL = "http://localhost:5000/api/subscription-status";
+const Subscription_URL = "/subscription-status";
 
 
 const StripeSuccess = () => {

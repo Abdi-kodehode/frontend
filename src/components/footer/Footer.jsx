@@ -39,7 +39,7 @@ const Footer = () => {
         <a rel="noopener noreferrer" href="https://twitter.com/playwellesport"  target="_blank"><FaTwitter className="cursor-pointer hover:text-sky-400 mobile:mr-5 small-mobile:mr-2 small-mobile:text-lg"/></a>
         <a
           rel="noopener noreferrer"
-          href="https://discord.gg/TRU9yBeW"
+          href="https://discord.gg/cUjtqQ6p8p"
           target="_blank"
         ><FaDiscord className="cursor-pointer hover:text-purple-500 mobile:mr-5 small-mobile:mr-2 small-mobile:text-lg"/></a>
         </div>

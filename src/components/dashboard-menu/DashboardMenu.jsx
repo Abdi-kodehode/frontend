@@ -50,7 +50,7 @@ const DashboardMenu = () => {
           </Link>
           <a
             rel="noopener noreferrer"
-            href="https://discord.gg/TRU9yBeW"
+            href="https://discord.gg/cUjtqQ6p8p"
             target="_blank"
           >
             <FaDiscord className=" inline-block text-5xl mt-7 cursor-pointer mb-2 hover:opacity-20 transition-all delay-150 screen:text-4xl  mobile:text-2xl" />
